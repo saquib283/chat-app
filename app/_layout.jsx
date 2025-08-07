@@ -5,7 +5,6 @@ import { auth } from '../services/firebaseConfig';
 import Toast from 'react-native-toast-message';
 import { View, ActivityIndicator } from 'react-native';
 
-// Prevents the splash screen from auto-hiding until the auth state is checked
 SplashScreen.preventAutoHideAsync();
 
 export default function Layout() {
