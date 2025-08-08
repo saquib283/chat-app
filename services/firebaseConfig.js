@@ -5,14 +5,15 @@ import { initializeAuth,getReactNativePersistence } from 'firebase/auth';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
+
 const firebaseConfig = {
-    apiKey: "AIzaSyABbTcJeXe6CKq9_UUu9wednJnWpiw1N9w",
-    authDomain: "chat-app-dbaf0.firebaseapp.com",
-    projectId: "chat-app-dbaf0",
-    storageBucket: "chat-app-dbaf0.firebasestorage.app",
-    messagingSenderId: "278801225969",
-    appId: "1:278801225969:web:f8bff6b4115f2ea2ea3150",
-    measurementId: "G-0GPXMM614B"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID,
+    measurementId: process.env.MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
